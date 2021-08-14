@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #010313;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    color: #fff;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+/********************************/
+/****** Header styles ***********/
+/********************************/
+#header{
+    padding: 1% 7%;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menus li{
+    display: inline-block;
+    margin: 0 2em;
+}
+
+.nav-menus li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-btn{
+    width: 127px;
+    height: 56px;
+    background-color: #010313;
+    color: #fff;
+    border: 1px solid #2945FF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hamburger{
+    color: white;
+    display: none;
+}
+
+/*****************************************/
+/******* Introduction styles *************/
+/*****************************************/
+#introduction{
+    padding: 5% 7%;
+    text-align: center;
+}
+
+.introduction-content h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0.4em;
+}
+
+.introduction-content p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 0.3em;
+}
+
+form{
+    margin-top: 2em;
+}
+
+.introduction-content input{
+    width: 426px;
+    height: 56px;
+    padding-left: 10px;
+}
+
+.introduction-content ::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+    color: #828282;
+}
+
+.introduction-content button{
+    width: 182px;
+    height: 56px;
+    background-color: #2945FF;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #2945FF;
+    font-weight: 700;
+}
+
+
+/***********************************************/
+/******** Responsive layouts for page **********/
+/***********************************************/
+@media screen and (max-width: 768px) {
+    /***** Nav Responsive styling *****/
+    #header{
+        padding: 5%;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    .nav-menus li{
+        display: block;
+        margin: 2em auto;
+    }
+
+    .nav-menus, #nav-btn{
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+    }
+    
+}
