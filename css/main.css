@@ -17,6 +17,10 @@ ul{
     list-style-type: none;
 }
 
+#introduction, #courses{
+    padding: 5% 7%;
+}
+
 
 
 /********************************/
@@ -63,7 +67,6 @@ ul{
 /******* Introduction styles *************/
 /*****************************************/
 #introduction{
-    padding: 5% 7%;
     text-align: center;
 }
 
@@ -106,6 +109,51 @@ form{
 }
 
 
+/*************************************/
+/***** Courses styles ****************/
+/*************************************/
+.fab{
+    color: #fff;
+}
+
+#courses-header{
+     text-align: center;
+}
+
+#courses-header h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#courses-header p{
+    font-size: 1.125rem;
+    margin-top: 1em;
+    font-weight: 400;
+}
+
+#card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4em;
+}
+
+#card-container .card{
+    border: 1px solid rgba(230, 230, 230, 0.2);
+    text-align: center;
+    width: 373px;
+    height: 346px;
+}
+
+#card-container .card .fab{
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#card-container .card h3{
+    margin-bottom: 2em;
+}
+
 /***********************************************/
 /******** Responsive layouts for page **********/
 /***********************************************/
@@ -132,7 +180,80 @@ form{
         display: block;
         position: absolute;
         top: 3%;
-        right: 5%;
+        right: 3%;
+    }
+
+
+    /****** Introduction Responsive styling *******/
+    #introduction{
+        width: 100%;
+        text-align: left;
+        padding: 5% 5%;
+    }
+
+    #introduction div{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .introduction-content h1{
+        font-size: 2.5rem;
+    }
+
+    .introduction-content p{
+        font-size: 0.8rem;
+    }
+
+    #introduction form{
+        display: block;
+        width: 100%;
+    }
+
+    .introduction-content input,
+    .introduction-content button{
+        width: 90%;
+        height: 40px;
+        margin-bottom: 2em;
+    }
+
+    .introduction-content input{
+        padding-left: 0;
+    }
+
+    .introduction-content ::placeholder, 
+    .introduction-content button{
+        font-size: 16px;
+    }
+
+    .introduction-content ::placeholder{
+        padding: 5px;
+    }
+
+
+    /******* Courses responsive styling *********/
+    #card-container{
+        flex-wrap: wrap;
+    }
+
+    #card-container .card{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 2em;
+        padding: 2%;
+    }
+
+    #card-container .card .fab{
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    
+    #card-container .card h3{
+        margin-bottom: 2em;
+    }
+
+    #card-container .card p{
+        font-size: 14px;
     }
     
 }

@@ -3,10 +3,10 @@ let navContents = document.querySelectorAll(".nav-content")
 
 hamburger.addEventListener('click', function () {
     navContents.forEach(function(content) {
-        if (content.style.display == "block"){
-            content.style.display = "none"
-        } else {
+        if (content.style.display == "none"){
             content.style.display = "block"
+        } else {
+            content.style.display = "none"
         }
     })
 })
