@@ -17,7 +17,7 @@ ul{
     list-style-type: none;
 }
 
-#introduction, #courses{
+#introduction, #courses, #how-it-works{
     padding: 5% 7%;
 }
 
@@ -153,6 +153,23 @@ form{
 #card-container .card h3{
     margin-bottom: 2em;
 }
+
+
+
+/***********************************************/
+/****How it works styles ***********************/
+/***********************************************/
+.fas, .far{
+    color: #2945FF;
+}
+
+#how-it-works-header{
+    text-align: center; 
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+
 
 /***********************************************/
 /******** Responsive layouts for page **********/
