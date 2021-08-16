@@ -159,8 +159,12 @@ form{
 /***********************************************/
 /****How it works styles ***********************/
 /***********************************************/
-.fas, .far{
+#how-it-works .fas, #how-it-works .far{
     color: #2945FF;
+}
+
+#how-it-works{
+   background: rgba(90, 63, 196, 0.1);
 }
 
 #how-it-works-header{
@@ -169,8 +173,51 @@ form{
     font-weight: 700;
 }
 
+#how-it-works-button{
+    text-align: center;
+}
+
+#how-it-works-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5em 0;
+    padding: 0 7%;
+}
+
+.process{
+    width: 238px;
+    height: 188px;
+    text-align: center;
+}
+
+.process h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 1em 0;
+}
+
+.process p{
+    font-size: 1.125 rem;
+    font-weight: 400;
+    color: #CCCCCC;
+}
+
+.get-started{
+    background-color: #2945FF;
+    width: 182px;
+    height: 56px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+}
 
 
+
+
+/***********************************************/
+/***********************************************/
 /***********************************************/
 /******** Responsive layouts for page **********/
 /***********************************************/
@@ -178,6 +225,7 @@ form{
     /***** Nav Responsive styling *****/
     #header{
         padding: 5%;
+        width: 100%;
     }
 
     #nav{
@@ -215,11 +263,12 @@ form{
     }
 
     .introduction-content h1{
-        font-size: 2.5rem;
+        font-size: 2.45rem;
     }
 
     .introduction-content p{
         font-size: 0.8rem;
+        width: 100%;
     }
 
     #introduction form{
@@ -249,6 +298,14 @@ form{
 
 
     /******* Courses responsive styling *********/
+    #courses-header h1{
+        font-size: 2rem;
+    }
+
+    #courses-header p{
+        font-size: 1rem;
+    }
+
     #card-container{
         flex-wrap: wrap;
     }
@@ -271,6 +328,27 @@ form{
 
     #card-container .card p{
         font-size: 14px;
+    }
+
+    /********** How it works responsive styling *********/
+    #how-it-works-content{
+        flex-wrap: wrap;
+        padding: 0;
+        width: 100%;
+        margin: 2em auto;
+        justify-content: center;
+    }
+
+    .process{
+        margin: 2em auto;
+    }
+
+    .process h3{
+        font-size: 1.2rem;
+    }
+
+    .process p{
+        font-size: 0.95rem;
     }
     
 }
